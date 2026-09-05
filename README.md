@@ -32,12 +32,6 @@ the current head SHA, so a new push requires a fresh explanation.
 </p>
 <p align="center"><sub>The contributor view for a pull request: Practice is optional. Proof is required.</sub></p>
 
-## Beyond code
-
-The long-term vision is **Proof of Understanding** for texts and other media,
-not only code. Those are future applications, not supported input types today.
-The current product is a GitHub pull-request understanding gate.
-
 ## How it works
 
 1. The GitHub App receives a pull-request event and binds a check to that head
