@@ -364,7 +364,7 @@ try {
       `INSERT INTO check_runs
         (revision_id, github_check_run_id, name, status, conclusion,
          public_summary, details_url)
-       VALUES ($1, $2, 'SlopProof / understanding required', 'in_progress', NULL,
+       VALUES ($1, $2, 'UnderstandProof / understanding required', 'in_progress', NULL,
                $3, $4)
        ON CONFLICT (revision_id) DO NOTHING`,
       [

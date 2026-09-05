@@ -595,7 +595,7 @@ databaseDescribe("PostgreSQL domain constraints", () => {
       connection.pool.query(
         `INSERT INTO check_runs
           (revision_id, github_check_run_id, name, status, conclusion, public_summary, details_url)
-         VALUES ($1, 'check-1', 'SlopProof / understanding required', 'completed', 'success',
+         VALUES ($1, 'check-1', 'UnderstandProof / understanding required', 'completed', 'success',
                  'passed', 'https://slopproof.test/revision')`,
         [ids.revision],
       ),

@@ -2221,7 +2221,7 @@ function checkIntent(): GithubCheckIntent {
     expectedHeadSha: headSha,
     idempotencyKey: "check:intent:revision-1",
     reason: "webhook_ingested",
-    name: "SlopProof / understanding required",
+    name: "UnderstandProof / understanding required",
     status: "in_progress",
     conclusion: null,
     publicSummary: "understanding required for the current head",

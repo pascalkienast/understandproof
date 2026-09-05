@@ -9,7 +9,7 @@ const baseIntent: GithubCheckIntent = {
   expectedHeadSha: "a".repeat(40),
   idempotencyKey: "check:intent:review-required",
   reason: "review_required",
-  name: "SlopProof / understanding required",
+  name: "UnderstandProof / understanding required",
   status: "in_progress",
   conclusion: null,
   publicSummary: "maintainer review required for head",

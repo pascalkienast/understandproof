@@ -39,11 +39,6 @@ compatibility contracts rather than the public brand:
 - **GitHub App identity:** The existing App now uses the installation URL
   `https://github.com/apps/understandproof`. Its numeric identity and existing
   installations remain unchanged; this is not a replacement App.
-- **Merge gate:** `SlopProof / understanding required` remains the exact check
-  name emitted by the application, stored in check rows, and required by
-  existing repository rulesets. The display name is deliberately not changed
-  independently of the rulesets. Check messages and PR comment copy can use
-  UnderstandProof while this gate remains stable.
 - **Repository policy:** `.slopproof.yml` remains the authoritative policy
   filename. No new filename or ambiguous dual-policy precedence is introduced.
 - **Authentication and protocol:** `slopproof_session`, other existing cookies,
@@ -86,9 +81,21 @@ does not deploy the renamed interface or static landing page.
    installations must retain their behavior.
 4. If the registered App is later renamed, preserve its identity/installations,
    verify the new installation URL, and update links only after it works.
-5. Treat the origin transition and any future required-check rename as coordinated migrations.
-   An origin move needs DNS/TLS, OAuth/webhook URLs, storage CORS, browser-origin
-   checks, and old-link handling verified together. A check rename needs the
-   emitter and consuming rulesets transitioned without a missing or fail-open
-   required gate. The hosted-origin transition is coordinated with deployment; the required-check
-   name remains unchanged.
+5. Coordinate emitted check names with repository rulesets as described below.
+
+## Required-check rename
+
+The emitted check name is now `UnderstandProof / understanding required`.
+Change the required status-check context from `SlopProof / understanding required`
+to that name, keeping the existing GitHub App identity and all other required
+checks unchanged. For the hosted repository, the App ID is `4570049`.
+
+The operator accepts that existing open PRs can wait for the new name during
+this cutover. Until the updated application is deployed, the running version
+still emits the old name. This is blocking, not an automatic pass. After
+deployment, verify a fresh PR revision reports the new check from the same App.
+Existing runs may retain the old name until the application next updates them;
+there is no historical evidence rewrite or database migration.
+
+A rollback to an older application also requires restoring the old required
+check context. Do not remove the required gate or change its App binding.

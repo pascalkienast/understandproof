@@ -51,7 +51,7 @@ export default async function PullRequestPage({
       </a>
       <div className="check-header">
         <div>
-          <p className="eyebrow">SlopProof / understanding required</p>
+          <p className="eyebrow">UnderstandProof / understanding required</p>
           <h1 className="flow-title">
             {pullRequest.risk_explanation.title ?? `PR #${String(number)}`}
           </h1>
