@@ -14,7 +14,7 @@ as the expected status-check source after the App has submitted a recent check.
 2. Install the production GitHub App on this repository only.
 3. Open a small bootstrap pull request that changes documentation.
 4. Complete Practice, Live Proof and maintainer review.
-5. Confirm the check named `SlopProof / understanding required` completed on the
+5. Confirm the check named `UnderstandProof / understanding required` completed on the
    pull request's current head SHA.
 6. Record the GitHub App integration ID shown as the check source.
 7. Create the `main` ruleset described below.
@@ -31,7 +31,7 @@ Target `refs/heads/main` and enable:
 - require `ci / verify`;
 - require `supply-chain / dependency-audit`;
 - require `supply-chain / image-sbom-scan`;
-- require `SlopProof / understanding required` from the UnderstandProof GitHub App;
+- require `UnderstandProof / understanding required` from the UnderstandProof GitHub App;
 - require the branch to be current with `main`.
 
 The repository currently has one maintainer, so the ruleset must not require an

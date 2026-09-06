@@ -322,6 +322,7 @@ export interface GithubUserAuthorizationPort {
   ): Promise<readonly string[]>;
 }
 
-// Compatibility identifier: repository rulesets require this exact check name.
+// Repository rulesets must require this exact name from the existing GitHub App.
 // See docs/operations/understandproof-rename.md before changing it.
-export const GITHUB_CHECK_NAME = "SlopProof / understanding required" as const;
+export const GITHUB_CHECK_NAME =
+  "UnderstandProof / understanding required" as const;

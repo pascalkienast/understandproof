@@ -886,7 +886,7 @@ async function seedProviderAttempt(
         (id, revision_id, github_check_run_id, name, status, conclusion,
          public_summary, details_url, last_synchronized_at, created_at, updated_at)
        VALUES ($1, $2, 'provider-integration-check',
-               'SlopProof / understanding required', 'in_progress', NULL,
+               'UnderstandProof / understanding required', 'in_progress', NULL,
                'Proof processing is in progress.',
                'https://slopproof.test/provider-integration', $3, $3, $3)`,
       [ids.checkRun, ids.revision, new Date("2030-08-12T11:00:00.000Z")],

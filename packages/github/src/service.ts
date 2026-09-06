@@ -192,8 +192,9 @@ export class FakeGithubCheckAdapter implements GithubCheckPort {
     await executor.query(
       `INSERT INTO check_runs
         (revision_id, github_check_run_id, name, status, conclusion, public_summary, details_url)
-       VALUES ($1, $2, 'SlopProof / understanding required', $3, $4, $5, $6)
+       VALUES ($1, $2, $7, $3, $4, $5, $6)
        ON CONFLICT (revision_id) DO UPDATE SET
+         name = EXCLUDED.name,
          status = EXCLUDED.status,
          conclusion = EXCLUDED.conclusion,
          public_summary = EXCLUDED.public_summary,
@@ -207,6 +208,7 @@ export class FakeGithubCheckAdapter implements GithubCheckPort {
         input.conclusion,
         input.summary,
         input.detailsUrl,
+        GITHUB_CHECK_NAME,
       ],
     );
   }

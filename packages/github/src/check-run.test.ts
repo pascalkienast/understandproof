@@ -55,7 +55,7 @@ describe("OctokitCheckRunAdapter", () => {
       {
         owner: "acme",
         repositoryName: "cachekit",
-        name: GITHUB_CHECK_NAME,
+        name: "UnderstandProof / understanding required",
         headSha,
         detailsUrl: intent.detailsUrl,
         externalId: revisionId,
@@ -89,7 +89,7 @@ describe("OctokitCheckRunAdapter", () => {
       expect.objectContaining({
         checkRunId: 701,
         externalId: revisionId,
-        name: GITHUB_CHECK_NAME,
+        name: "UnderstandProof / understanding required",
       }),
       expect.any(AbortSignal),
     );

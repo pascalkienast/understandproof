@@ -45,7 +45,7 @@ const ACTIVE_ATTEMPT_STATUSES = [
   "review_required",
 ] as const;
 
-const GITHUB_CHECK_NAME = "SlopProof / understanding required";
+const GITHUB_CHECK_NAME = "UnderstandProof / understanding required";
 
 export type WorkerCheckIntentWriterInput = {
   revisionId: string;

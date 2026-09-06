@@ -955,7 +955,7 @@ function claimedCheck() {
     checkRunId,
     attempt: 1,
     githubCheckRunId: null,
-    name: "SlopProof / understanding required",
+    name: "UnderstandProof / understanding required",
     status: "in_progress" as const,
     conclusion: null,
     publicSummary: "understanding required",
