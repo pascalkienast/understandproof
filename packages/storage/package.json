@@ -5,8 +5,8 @@
   "type": "module",
   "exports": "./src/index.ts",
   "dependencies": {
-    "@aws-sdk/client-s3": "3.1108.0",
-    "@aws-sdk/s3-request-presigner": "3.1108.0",
-    "zod": "4.4.3"
+    "@aws-sdk/client-s3": "3.1127.0",
+    "@aws-sdk/s3-request-presigner": "3.1127.0",
+    "zod": "4.5.4"
   }
 }

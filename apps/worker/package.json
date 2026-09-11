@@ -21,7 +21,7 @@
     "@understandproof/providers": "workspace:*",
     "@understandproof/questions": "workspace:*",
     "@understandproof/storage": "workspace:*",
-    "pg-boss": "12.27.0",
-    "zod": "4.4.3"
+    "pg-boss": "12.30.0",
+    "zod": "4.5.4"
   }
 }
