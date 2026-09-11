@@ -44,7 +44,7 @@
     "format:check": "prettier --check ."
   },
   "devDependencies": {
-    "@aws-sdk/client-s3": "3.1108.0",
+    "@aws-sdk/client-s3": "3.1127.0",
     "@playwright/test": "1.62.1",
     "@understandproof/auth": "workspace:*",
     "@understandproof/analysis": "workspace:*",
