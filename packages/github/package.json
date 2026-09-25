@@ -9,7 +9,7 @@
     "@understandproof/db": "workspace:*",
     "@understandproof/domain": "workspace:*",
     "pg": "8.23.0",
-    "pg-boss": "12.27.0",
-    "zod": "4.4.3"
+    "pg-boss": "12.33.4",
+    "zod": "4.6.5"
   }
 }

@@ -44,7 +44,7 @@
     "format:check": "prettier --check ."
   },
   "devDependencies": {
-    "@aws-sdk/client-s3": "3.1108.0",
+    "@aws-sdk/client-s3": "3.1137.0",
     "@playwright/test": "1.62.1",
     "@understandproof/auth": "workspace:*",
     "@understandproof/analysis": "workspace:*",
@@ -58,8 +58,8 @@
     "@types/node": "24.13.3",
     "@types/pg": "8.21.0",
     "@types/qrcode": "1.5.6",
-    "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
     "drizzle-kit": "0.31.10",
     "eslint": "10.8.1",
     "prettier": "3.9.6",
