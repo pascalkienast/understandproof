@@ -6,7 +6,7 @@
   "exports": "./src/index.ts",
   "dependencies": {
     "@understandproof/domain": "workspace:*",
-    "pg": "8.23.0",
-    "zod": "4.4.3"
+    "pg": "8.23.1",
+    "zod": "4.6.5"
   }
 }
